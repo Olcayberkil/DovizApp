@@ -1,0 +1,210 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body.dark-mode {
+    background-color: #0a0a15;
+    color: #e0e0ff;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.03) 0%, transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.03) 0%, transparent 25%),
+        linear-gradient(to bottom, rgba(20, 20, 40, 0.9), rgba(10, 10, 25, 0.95));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.dashboard-header {
+    background: rgba(10, 15, 30, 0.7);
+    padding: 25px 40px;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px 0px;
+    border-radius: 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.2),
+        0 0 40px rgba(255, 0, 255, 0.1);
+    border-top: 2px solid rgba(0, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 0, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+}
+
+.dashboard-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+    z-index: -1;
+    animation: hologramPulse 8s infinite alternate;
+}
+
+@keyframes hologramPulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0.3; }
+}
+
+.dashboard-header img {
+    height: 300px;
+    width: 800px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 255, 0.7));
+    max-width: 100%;
+}
+
+.dashboard-header h1 {
+    margin: 25px 0 10px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.time {
+    font-size: 1.7rem;
+    color: #00ffff;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+.holographic-table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    background: transparent;
+    position: relative;
+}
+
+.holographic-table::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+    z-index: -1;
+    border-radius: 5px;
+    animation: tableGlow 6s infinite alternate;
+}
+
+@keyframes tableGlow {
+    0% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.1); }
+    50% { box-shadow: 0 0 40px rgba(255, 0, 255, 0.1); }
+    100% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.1); }
+}
+
+.holographic-table th,
+.holographic-table td {
+    padding: 27px 25px;
+    text-align: center;
+    color: #e0e0ff;
+    background: rgba(30, 35, 70, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2), 0 3px 10px rgba(255, 0, 255, 0.1);
+    border: none;
+    border-radius: 0;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+}
+
+.holographic-table th {
+    background: linear-gradient(to right, rgba(0, 100, 255, 0.3), rgba(150, 0, 255, 0.3));
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 8px rgba(0, 200, 255, 0.5);
+    border-top: 1px solid rgba(0, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 0, 255, 0.3);
+}
+
+.currency-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.currency-cell img {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px rgba(0, 200, 255, 0.5));
+}
+
+.currency-cell span {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.9rem;
+    text-shadow: 0 0 5px rgba(0, 200, 255, 0.3);
+}
+
+.buy-cell, .sell-cell {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.buy-cell .label,
+.sell-cell .label {
+    color: #bbb;
+    font-weight: 600;
+    margin-right: 4px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.price.green {
+    color: #00ff66 !important;
+    text-shadow: 0 0 6px rgba(0, 255, 100, 0.8);
+}
+
+.price.red {
+    color: #ff4d4d !important;
+    text-shadow: 0 0 6px rgba(255, 50, 50, 0.8);
+}
+
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0%, rgba(0, 255, 255, 0.05) 1px, transparent 2px);
+    pointer-events: none;
+    z-index: 100;
+    animation: scanlineMove 4s linear infinite;
+}
+
+@keyframes scanlineMove {
+    from { background-position: 0 0; }
+    to { background-position: 0 20px; }
+}

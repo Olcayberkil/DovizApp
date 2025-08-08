@@ -1,0 +1,91 @@
+
+body.luminex {
+    background: linear-gradient(135deg, #fafafa, #e4ecf5);
+    font-family: 'Rajdhani', sans-serif;
+    padding: 2rem;
+    color: #333;
+}
+
+.luminex-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(135deg, #6b11cb57 0%, #2574fc33 100%);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.luminex-logo {
+    width: 250px;
+    margin-top: 1rem;
+}
+.luminex-title {
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: black;
+}
+.luminex-time {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Grid */
+.luminex-grid {
+    background-color: rgba(128, 128, 128, 0.048);
+    border-radius: 1.5rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.luminex-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.089), rgba(245, 245, 255, 0.377));
+    border-radius: 1.5rem;
+    padding: 5rem 1.5rem;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.05),
+        inset 0 0 1px rgba(255, 255, 255, 0.027);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.2s ease;
+    border: 1px solid rgba(200, 200, 255, 0.25);
+}
+
+.luminex-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    border-color: #7f8ff1;
+}
+
+
+.luminex-flag {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border: solid 2px black;
+}
+
+.luminex-code {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #444;
+}
+
+.luminex-buy {
+    color: #00b894;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+}
+.luminex-sell {
+    color: #d63031;
+    font-weight: 600;
+    font-size: 2rem;
+}
+

@@ -1,0 +1,269 @@
+:root {
+  --buy-color: #d72638;
+  --sell-color: #1b998b;
+}
+
+body.exchange-theme {
+  background: #f9fafb;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 15px;
+}
+
+.edge-container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.edge-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.edge-logo {
+  height: 340px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.edge-title {
+  font-size: 74px;
+  font-weight: 900;
+  color: #333;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  background: #edf2ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.edge-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px; 
+}
+
+.edge-table thead th {
+  text-align: center;
+  padding: 16px;
+  background: #ffffff;
+  color: #4a4a4a;
+  font-size: 20px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.edge-table tbody tr {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  height: 100px; /* Satır yüksekliği */
+}
+
+.edge-table tbody tr:hover {
+  transform: scale(1.01);
+}
+
+.edge-table td {
+  text-align: center;
+  padding: 20px 18px;
+  border: none;
+  font-size: 20px;
+}
+
+.currency-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px 12px;
+}
+
+.currency-flag {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.currency-code {
+  font-weight: 700;
+  font-size: 28px;
+  color: #2d3748;
+}
+
+.buy-price,
+.sell-price {
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.buy-price {
+  background: rgba(215, 38, 56, 0.1);
+  color: var(--buy-color);
+}
+
+.sell-price {
+  background: rgba(27, 153, 139, 0.1);
+  color: var(--sell-color);
+}
+
+:root {
+  --buy-color: #d72638;
+  --sell-color: #1b998b;
+}
+
+body.exchange-theme {
+  background: #f9fafb;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 15px;
+}
+
+.edge-container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.edge-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.edge-logo {
+  height: 340px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.edge-title {
+  font-size: 74px;
+  font-weight: 900;
+  color: #333;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  background: #edf2ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.edge-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; 
+}
+
+.edge-table thead th {
+  text-align: center;
+  padding: 16px;
+  background: #fff;
+  color: #4a4a4a;
+  font-size: 40px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.edge-table tbody tr {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  height: auto;
+  padding: 0;
+}
+
+.edge-table tbody tr:hover {
+  transform: scale(1.01);
+}
+
+.edge-table td {
+  text-align: center;
+  padding: 8px 16px;
+  border: none;
+  font-size: 18px;
+}
+
+.currency-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 24px 12px;
+}
+
+.currency-flag {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.currency-code {
+  font-weight: 700;
+  font-size: 28px;
+  color: #2d3748;
+}
+
+.buy-price,
+.sell-price {
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.buy-price {
+  background: rgba(215, 38, 56, 0.1);
+  color: var(--buy-color);
+}
+
+.sell-price {
+  background: rgba(27, 153, 139, 0.1);
+  color: var(--sell-color);
+}
+

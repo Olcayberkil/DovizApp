@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#exchangeRatesContainer {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.neo-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.neo-header h1 {
+    font-size: 4.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    margin-bottom: 0.5rem;
+}
+
+.neo-header .company-image img {
+    max-width: 380px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.neo-header .time {
+    font-size: 2.2rem;
+    color: #e0f7fa;
+    font-family: 'Rubik', sans-serif;
+}
+
+.neo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.neo-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 2.3rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+}
+
+.neo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+
+.currency-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.currency-title img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.currency-title span {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0, 255, 255, 0.3);
+}
+
+.currency-details-inline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+    font-size: 2rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #b2ebf2;
+}
+
+.detail-value {
+    font-weight: bold;
+}
+
+.detail-buy {
+    color: #00e676;
+}
+
+.detail-sell {
+    color: rgb(255, 0, 0);
+}
+
+
+

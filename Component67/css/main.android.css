@@ -1,0 +1,221 @@
+#exchangeRatesContainer {
+    width: 100%;
+    max-width: 80rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+}
+
+#styleSelector {
+    margin: 10px;
+    padding: 5px;
+}
+
+.exchange-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.currency-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Ortak Tablo Stilleri */
+.exchange-table, .plain-board {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.exchange-table th, .exchange-table td,
+.plain-board th, .plain-board td {
+    padding: 0.9375rem;
+    text-align: left;
+}
+
+.plain-board th {
+    background-color: #f2f2f2;
+}
+
+/* Dikey Düzen Stilleri */
+.exchange-table-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+}
+
+.currency-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9375rem;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.currency-item:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.currency-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.currency-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.plain-board-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.plain-board-item-vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currency-rates {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rate-item {
+    display: flex;
+    gap: 8px;
+}
+
+.rate-label {
+    font-weight: bold;
+}
+
+.dark-mode .horizontal-layout {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.main-currencies.horizontal-layout {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.rates.horizontal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dark-mode-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.dark-mode-table th, .dark-mode-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode-table th {
+    background-color: #333;
+}
+
+.dark-mode-table td {
+    background-color: #2c2c2c;
+}
+
+.dark-mode-table td img {
+    width: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Para Birimi Sembolleri */
+.currency-symbol {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.dark-mode .currency-symbol {
+    color: #aaa;
+}
+
+/* Kontrol Butonları */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+    margin-bottom: 1.25rem;
+}
+
+.controls select {
+    padding: 0.5rem 1rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.controls select:hover {
+    border-color: #999;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+}
+
+/* Hata Mesajı */
+.error-message {
+    background-color: #fff3f3;
+    color: #e74c3c;
+    padding: 0.9375rem;
+    border-radius: 0.5rem;
+    margin: 0.9375rem 0;
+    text-align: center;
+    font-weight: 500;
+    border: 0.0625rem solid #ffd7d7;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 48rem) {
+    #exchangeRatesContainer {
+        margin: 0.625rem;
+        padding: 0.9375rem;
+    }
+
+    .currency-item {
+        padding: 0.75rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls select {
+        width: 100%;
+    }
+}

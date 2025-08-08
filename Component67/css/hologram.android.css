@@ -1,0 +1,101 @@
+body.hologram-mode {
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.hologram-header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #00ffc3;
+    box-shadow: 0 0 20px #00ffc3;
+    margin-bottom: 8px;
+}
+
+.hologram-header img {
+    height: 300px;
+    filter: drop-shadow(0 0 10px #00ffc3);
+}
+
+.hologram-header h1 {
+    font-size: 3.2rem;
+    margin: 10px 0 5px;
+    color: #00ffc3;
+    text-shadow: 0 0 8px #00ffc3;
+}
+
+.hologram-header .time {
+    color: #aad;
+    font-size: 1.7rem;
+    text-shadow: 0 0 5px #00e0ff;
+}
+
+#exchangeRatesContainer {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 1 1 2rem; 
+}
+
+.hologram-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hologram-card {
+    background: rgba(0, 255, 255, 0.08);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    transition: transform 0.4s ease;
+    backdrop-filter: blur(12px);
+}
+
+.hologram-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px #00ffc3;
+}
+
+.hologram-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hologram-top img {
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00fff2;
+}
+
+.hologram-bottom {
+    margin-top: 10px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.hologram-bottom .label {
+    color: #00ffc3;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.hologram-bottom .buy {
+    color: #76ff03;
+}
+
+.hologram-bottom .sell {
+    color: #ff1744;
+}
+

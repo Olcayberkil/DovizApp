@@ -1,0 +1,105 @@
+body.darkv3-mode {
+    background-color: #121212;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.darkv3-header {
+    text-align: center;
+    padding: 40px  20px;
+    border-bottom: 2px solid;
+    margin-bottom: 12px;
+}
+
+.darkv3-header img {
+    height: 420px;
+    margin-bottom: 10px;
+}
+
+.darkv3-header h1 {
+    margin: 0;
+    font-size: 58px;
+    color: #ffffff;
+}
+
+.darkv3-header .time {
+    font-size: 38px;
+    color: white;
+    margin-top: 5px;
+}
+
+#exchangeRatesContainer {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #1e1e1e;
+    padding-bottom: 18px;
+    border-radius: 18px;
+}
+
+.darkv3-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.darkv3-item {
+    background-color: #232323;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.096);
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.darkv3-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.darkv3-left img {
+    height: 72px;
+    width: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.darkv3-left span {
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.darkv3-right {
+    text-align: right;
+    font-size: 40px;
+}
+
+.darkv3-label {
+    color: #bbb;
+    font-weight: 600;
+    font-size: 34px;
+    margin-right: 6px;
+}
+
+.darkv3-buy {
+    color: #ff6b6b;
+    font-weight: 800;
+    font-size: 33px;
+    text-shadow: 0 0 8px rgba(255, 107, 107, 0.2);
+}
+
+.darkv3-sell {
+    color: #1dd1a1;
+    font-weight: 800;
+    font-size: 33px;
+    text-shadow: 0 0 8px rgba(29, 209, 161, 0.2);
+}

@@ -1,0 +1,116 @@
+:root {
+    --color-primary: #4f46e5;
+    --color-secondary: #8b5cf6;
+    --color-bg: #f0f4f8;
+    --color-card: #ffffff;
+    --color-text: #1e293b;
+    --color-subtext: #64748b;
+    --color-buy: #16a34a;
+    --color-sell: #dc2626;
+    --color-border: #e2e8f0;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.modern-mode {
+    background: linear-gradient(to bottom, var(--color-bg), #e0e7ff);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+}
+
+#exchangeRatesContainer {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: var(--color-card);
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px var(--color-shadow);
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.table-header {
+    text-align: center;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    padding: 2rem 1rem 1.5rem;
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.table-header .logo {
+    height: 300px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.table-header h2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.table-header .time {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.exchange-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.exchange-table thead {
+    background: rgba(128, 128, 128, 0.2);
+    color: var(--color-subtext);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+}
+
+.exchange-table th,
+.exchange-table td {
+    padding: 2rem;
+    text-align: left;
+    border-bottom: 6px solid var(--color-border);
+}
+
+.exchange-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.currency-cell {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.currency-cell img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid var(--color-border);
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.currency-cell span {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.buy-cell {
+    color: var(--color-buy);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.sell-cell {
+    color: var(--color-sell);
+    font-weight: 600;
+    font-size: 2rem;
+}
+

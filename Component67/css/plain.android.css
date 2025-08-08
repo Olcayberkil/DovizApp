@@ -1,0 +1,196 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Ana container’ı tam ekran hizala */
+.plain-board {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.plain-board thead tr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.plain-board th {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.plain-board th:nth-child(2),
+.plain-board th:nth-child(3) {
+    text-align: center;
+}
+
+.plain-board-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.currency img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.currency span {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.buy-rate,
+.sell-rate {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    justify-self: center;
+}
+
+.buy-rate {
+    color: #2e7d32;
+    background-color: #e8f5e9;
+}
+
+.sell-rate {
+    color: #c62828;
+    background-color: #ffebee;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.125rem solid #f0f0f0;
+}
+
+.company-image {
+    margin-bottom: 1rem;
+}
+
+.company-image img {
+    max-width: 20rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03125rem;
+}
+
+
+
+
+.plain-board-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    margin-top: 1.25rem;
+}
+
+.plain-board-item-vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 2rem 2rem 2rem 2rem rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+.plain-board-item-vertical:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+.currency-info {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+.currency-info img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.currency-info span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.currency-rates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: right;
+}
+
+.rate-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.rate-label {
+    font-weight: 900;
+    color: #666;
+    font-size: 2.2rem;
+}
+
+.rate-value {
+    font-weight: 900;
+    font-size: 2.5rem;
+    min-width: 8rem;
+    text-align: right;
+}
+
+.rate-item:first-child .rate-value {
+    color: #2ecc71;
+}
+
+.rate-item:last-child .rate-value {
+    color: #e74c3c;
+}
+
+.time {
+    font-size: 2.1rem;
+    color: #666;
+    font-family: 'Orbitron', sans-serif;
+}

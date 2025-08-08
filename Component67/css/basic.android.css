@@ -1,0 +1,193 @@
+:root {
+  --buy-color: #ef233c;
+  --sell-color: #2b9348;
+}
+
+body.exchange-theme {
+  background: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.exchange-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exchange-header {
+  background: rgba(128, 128, 128, 0.089);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 95.5%;
+}
+
+.exchange-title {
+  font-size: 74px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: black;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  background: #edf2ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.exchange-logo {
+  height: 340px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.currency-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px; 
+}
+
+.currency-table thead th {
+  background: #f9fafb;
+  padding: 18px 12px; 
+  font-size: 34px;
+  color: #4a5568;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.currency-table tbody tr {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100px; 
+}
+
+.currency-table td {
+  border: none;
+  padding: 8px 16px; 
+}
+
+.currency-table tbody tr:hover {
+  background: #f8fafc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.currency-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  justify-content: center;
+}
+
+
+.currency-flag {
+  width: 64px;
+  height: 64px; 
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #bbb;
+}
+
+
+.currency-code {
+  font-weight: 700;
+  color: #1a202c;
+  font-size: 32px;
+}
+
+
+.buy-price,
+.sell-price {
+  font-weight: 700;
+  padding: 14px 20px;
+  font-size: 32px;
+  border-radius: 12px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+.buy-price {
+  background: rgba(239, 35, 60, 0.1);
+  color: var(--buy-color);
+}
+
+.sell-price {
+  background: rgba(43, 147, 72, 0.1);
+  color: var(--sell-color);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .exchange-title {
+    font-size: 22px;
+  }
+  .exchange-time {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .buy-price, .sell-price {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+  .currency-flag {
+    width: 22px;
+    height: 22px;
+  }
+  .currency-cell {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* Small phones */
+@media (min-width: 481px) and (max-width: 576px) {
+  .exchange-title {
+    font-size: 24px;
+  }
+  .exchange-time {
+    font-size: 15px;
+  }
+  .buy-price, .sell-price {
+    font-size: 16px;
+  }
+  .currency-flag {
+    width: 24px;
+    height: 24px;
+  }
+}

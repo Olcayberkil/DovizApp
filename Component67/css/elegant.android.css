@@ -1,0 +1,192 @@
+:root {
+    --color-primary: #3b82f6;
+    --color-accent: #8b5cf6;
+    --color-bg: #f4f6f8;
+    --color-card: #ffffff;
+    --color-border: #e5e7eb;
+    --color-shadow: rgba(0, 0, 0, 0.06);
+    --color-buy: #059669;
+    --color-sell: #dc2626;
+    --color-text: #111827;
+    --color-subtext: #6b7280;
+    --color-hover: #f9fafb;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body.elegant-mode {
+    background-color: var(--color-bg);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.elegant-card {
+    background: var(--color-card);
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px var(--color-shadow);
+}
+
+.elegant-header {
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.elegant-logo {
+    width: 240px;
+    max-width: 40vw;
+    object-fit: contain;
+}
+
+.table-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.header-meta {
+    gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 9px;
+}
+
+.elegant-header .time {
+    font-size: 2.5rem;
+    color: var(--color-subtext);
+    font-weight: 700;
+}
+
+.live-badge {
+    background: rgba(220, 38, 38, 0.1);
+    color: var(--color-sell);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0.5rem 7.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.live-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--color-sell);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.6; }
+    100% { transform: scale(0.95); opacity: 1; }
+}
+
+.elegant-body {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.elegant-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2rem;
+}
+
+.elegant-table thead th {
+    padding: 2rem 3rem;
+    font-weight: 600;
+    color: var(--color-subtext);
+    text-align: left;
+    border-bottom: 2px solid var(--color-border);
+    background: var(--color-bg);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.elegant-table tbody td {
+    padding: 2.5rem 3rem;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-card);
+    transition: background 0.3s;
+}
+
+.elegant-table tbody tr:hover {
+    background-color: var(--color-hover);
+}
+
+.currency-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.currency-flag {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.currency-code {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.currency-name {
+    font-size: 1.7rem;
+    color: var(--color-subtext);
+}
+
+.buy-cell {
+    color: var(--color-buy);
+    font-weight: 600;
+}
+
+.sell-cell {
+    color: var(--color-sell);
+    font-weight: 600;
+}
+
+.currency-symbol {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+.buy-cell .currency-symbol {
+    color: var(--color-buy); 
+}
+
+.sell-cell .currency-symbol {
+    color: var(--color-sell); 
+}
+
+

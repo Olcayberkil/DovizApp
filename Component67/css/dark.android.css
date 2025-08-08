@@ -1,0 +1,136 @@
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+#exchangeRatesContainer {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #242424;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dark-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #333;
+}
+
+.company-image {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.company-image img {
+  max-width: 25rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.dark-header h1 {
+  font-size: 4.8rem;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+}
+
+.time {
+  font-size: 2.5rem;
+  color: #bbb;
+  margin-top: 0.75rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* TABLE */
+
+.dark-mode-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: 1.5rem;
+}
+
+.dark-mode-table thead {
+  background-color: #2a2a2a;
+}
+
+.dark-mode-table th {
+  padding: 1.25rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dark-mode-table td {
+  padding: 1.6rem;
+  border: none;
+  background: #2a2a2a;
+  transition: background-color 0.2s ease;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.dark-mode-table tbody tr {
+  transition: transform 0.2s ease;
+}
+
+.dark-mode-table tbody tr:hover {
+  transform: translateY(-3px);
+}
+
+.dark-mode-table tbody tr:hover td {
+  background: #333;
+}
+
+.dark-mode-table td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.75rem 0 0 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.dark-mode-table td:last-child {
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.dark-mode-table td img {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-table td span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.dark-mode-table td:nth-child(2) {
+  color: #4CAF50;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.dark-mode-table td:nth-child(3) {
+  color: #FF5722;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
